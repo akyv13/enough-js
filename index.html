@@ -6,7 +6,11 @@
     <title>Learn Enough JavaScript</title>
     <meta charset = "utf-8">
     <script>
-      alert( "Hello, World!" );
+      const daysOfTheWeek = [ "Sunday", "Monday", "Tuesday", "Wednesday",
+                              "Thursday", "Friday", "Saturday" ];
+      let now = new Date();
+      let dayName = daysOfTheWeek[ now.getDay() ];
+      alert( `Hello, World! Happy ${ dayName }` );
       console.log( "This page contains a friendly greeting." );
     </script>
   </head>
